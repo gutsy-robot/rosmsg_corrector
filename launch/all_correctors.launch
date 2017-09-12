@@ -1,0 +1,10 @@
+<launch>
+
+  
+
+  <node pkg="string_rosmsg" type="imu_pub.py" name="imu_pub" output="screen"/>
+  <node pkg="string_rosmsg" type="pubgps.py" name="pubgps" output="screen"/>
+  <node pkg="string_rosmsg" type="repair_vo_frame.py" name="repair_vo_frame" output="screen"/>
+
+ 
+</launch>
