@@ -21,7 +21,7 @@ class publishGPS(object):
 		self.splitStrings= str(self.lastMsg).split(",")
 		gpsmsg=NavSatFix()
 		gpsmsg.header.stamp = rospy.Time.now()
-		gpsmsg.header.frame_id = "gps"
+		gpsmsg.header.frame_id = "sensors_link"
 		#rospy.loginfo(self.splitStrings[1])
 		gpsmsg.latitude=float(self.splitStrings[1][4:])
 		gpsmsg.longitude=float(self.splitStrings[2][5:-5])
